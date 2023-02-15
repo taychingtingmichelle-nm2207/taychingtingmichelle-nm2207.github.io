@@ -1,8 +1,8 @@
 body {
-  background-color: #334155;
+  background-color: #FFF4D2;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: white;
+  color: #361601;
   padding-left: 12px;
   padding-top: 4px;
 }
@@ -12,22 +12,22 @@ body {
 }
 
 .counter {
-  color: #fbbf24;
+  color: #b43772;
 }
 
 h2 {
-  color: #f9a8d4;
+  color: #b43772;
 }
 
 /* CSS */
 button {
   appearance: none;
-  background-color: #b45309;
+  background-color: #ECF2FF;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
   box-sizing: border-box;
-  color: #fff;
+  color: #531f5e;
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
@@ -39,5 +39,5 @@ button {
 }
 
 button:hover {
-  background-color: #92400e;
+  background-color: #E3DFFD;
 }
