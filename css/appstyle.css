@@ -1,0 +1,650 @@
+html {
+  height:100%;
+  width:100%;
+  background-color: #ffffff;
+}
+
+.title{
+  font-family:"Times New Roman", Times, serif;
+  color: #361601;
+  font-style: italic;
+  font-size: 80px;
+}
+
+.landingstatement{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.highlighted {
+  background-color: rgba(232, 240, 255, 0.5);
+}
+
+body {
+  background-size: 100% 100%; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #361601;
+  margin: 0;
+  padding-top: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.center{
+  text-align: center;
+}
+
+.underlined{
+  text-decoration: underline;
+}
+
+.underlinedheader{
+  padding-left: 30px;
+}
+
+.underlinedheader2{
+  align-items: right;
+}
+
+
+#center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#landingpage{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.landingtext{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  font-size: 2vw;
+  position: absolute;
+  text-align:center;
+}
+
+.text{
+  font-size: 25px;
+  font-style: italic;
+  color: #361601
+}
+
+.text2{
+  font-size: 24px;
+  color: #ffffff;
+  text-align:center;
+  align-items: center;
+
+}
+
+.marblebox{
+  background-image: url('../resources/marble-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  border-radius: 30px;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 30px;
+
+  padding-top: 35px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 20px;
+}
+
+
+.storyboardheader{
+  color: #361601;
+  padding-left: 30hommpx;
+}
+
+
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid #2c65a7;
+  padding: 10px;
+  height: 10px
+}
+
+/*for moving text animation*/
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.line-1{
+  position: absolute;
+  left: 15%;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 2.5vw;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+/* Animation  2s steps 120 */ 
+.anim-typewriter{
+  animation: typewriter 0.5s steps(120) 1s 1 normal both,
+            blinkTextCursor 500ms steps(44) infinite normal;
+            
+}
+@keyframes typewriter{
+  from{width: 0em;}
+  to{width: 29.0em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(19, 2, 2, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+/*Button?*/
+.button{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  border-radius: 4px;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  /*width: 200px;*/
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 30px;
+  height: 8vh;
+  width: 12vw;
+  font-size: 1.5px;
+  font-size: 1vw;
+}
+
+.homeButton{
+  background-color: pink;
+  color: #361601;
+  padding: 10px 20px 10px 20px;
+  margin-top: 14px;
+  margin-left: 180px;
+  border-radius: 20px;
+  position: fixed;
+  display: inline-block;
+}
+
+.homeButton:hover{
+  background-color:rgb(252, 222, 222);
+}
+
+.weeklyprogressDiaryBut{
+  background-color: pink;
+  color: #361601;
+  padding: 10px 20px 10px 20px;
+  margin-top: 14px;
+  margin-left: 280px;
+  border-radius: 20px;
+  position: fixed;
+  display: inline-block;
+}
+
+.weeklyprogressDiaryBut:hover{
+  background-color:rgb(252, 222, 222);
+}
+
+#timeout{
+  visibility: hidden;
+}
+
+#timeout2{
+  visibility: hidden;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#mainpage{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #14131275;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+
+.articlebody{
+  margin-top: 100px;
+  text-align: center;
+}
+
+#name{
+  font-family: Garamond;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: #361601;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+}
+
+
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9 {
+	position: absolute;
+	top: 0;
+  width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -18;
+	opacity: 0;
+	animation-name: fade;
+	animation-duration: 16s;
+	animation-iteration-count: infinite;
+}
+
+
+section .img-1, section .img-2, section .img-3, section .img-4 section .img-5, section .img-6, section .img-7, section .img-8, section .img-9 {
+	opacity: 1;
+	animation-name: iris;
+	animation-duration: 16s;
+	animation-iteration-count: infinite;
+}
+
+.img-1 { animation-delay: 0s; }
+.img-2 { animation-delay: 1.5s; }
+.img-3 { animation-delay: 3s; }
+.img-4 { animation-delay: 4.5s; }
+.img-5 { animation-delay: 6s; }
+.img-6 { animation-delay: 7.5s }
+.img-7 { animation-delay: 9s; }
+.img-8 { animation-delay: 10.5s; }
+.img-9 { animation-delay: 12s; }
+
+/* Banner Animations (4s per image, 16s total timeline)
+/*---------------------------------------------*/
+
+@keyframes crossfade {
+	/* This is the default behaviour as described by Jonathan Snook*/
+	00.00%	{ opacity: 0; }
+	06.25%	{ opacity: 1; }
+	25.00%	{ opacity: 1; }
+	31.25%	{ opacity: 0; }
+	100.0%	{ opacity: 0; }
+}
+
+@keyframes fade {
+	/* By offsetting the fade out and animating z-index, we can prevent the background from showing up at all*/
+	00.00%	{ opacity: 0; z-index: -10; }
+	06.25%	{ opacity: 1; z-index: -10; }
+	31.25%	{ opacity: 1; z-index: -12; }
+	37.50%	{ opacity: 0; z-index: -14; }
+	100.0%	{ opacity: 0; z-index: -16; }
+}
+
+/* Animating a clip-path in Google Chrome can destroy performance...it's crazy CPU intensive */
+@keyframes iris {
+	00.0%	{ clip-path: circle(0% at 50% 0%); z-index: -10; }
+	12.5%	{ clip-path: circle(120% at 50% 0%); z-index: -10; }
+	31.25%	{ clip-path: circle(120% at 50% 0%); z-index: -12; }
+	37.50%	{ clip-path: circle(0% at 50% 0%); z-index: -14; }
+	100%	{ clip-path: circle(0% at 50% 0%); z-index: -16; }
+}
+
+#statementborder{ 
+  background-color: hsl(0, 0%, 0%, 0.7);
+  width: 70vw;
+  /*height: 28vh;*/
+  position: absolute;
+  margin-top: -31%;
+  margin-left: 15%;
+  border-radius: 25px;
+  border-style:ridge;
+  animation: fadeInAnimation ease 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#banner{
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#bordertitle{
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 3.5vw;
+  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.container1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 600px;
+  margin: auto;
+  text-align: justify;
+  line-height: 200%;
+  text-size-adjust: auto;
+  font-size: 1vw;
+  font-style: italic;
+}
+
+.container2{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  line-height: 200%;
+  text-size-adjust: auto;
+  font-size: 0.9vw;
+  padding-bottom:25px;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+.container3{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  line-height: 200%;
+  text-size-adjust: auto;
+  font-size: 1vw;
+  padding-bottom:25px;
+  padding-left: 80px;
+}
+
+
+
+.containerleft{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: left;
+  display:grid;
+  float:left;
+  margin-left: 170px;
+  width: 40%;
+  flex: 50%;
+  line-height: 200%;
+  text-align: justify;
+  text-size-adjust: auto;
+  font-size: 1vw;
+
+}
+
+.containerright{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: right;
+  float:right;
+  flex: 50%;
+  margin-right: 100px;
+  width: 40%;
+  line-height: 200%;
+  text-align: justify;
+  text-size-adjust: auto;
+  font-size: 1vw;
+}
+
+.mainheaders{
+  font-family: Garamond;
+  font-size: 2vw;
+  letter-spacing: 3px;
+  color: #361601;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+}
+
+.header1{
+  margin: left;
+  margin-left: 170px;
+  width: 45%;
+  line-height: 200%;
+  text-align: justify;
+  text-size-adjust: auto;
+  font-size: 1.5vw;
+}
+
+.piechart1{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-top: -70px;*/
+  width: 50%;
+}
+
+.gif2{
+  margin: right;
+  padding-left: 20px;
+  padding-right: 110px;
+  float:right;
+  flex: 50%;
+  margin-right: 70px;
+  margin-left: 100px;
+  margin-top: -60px;
+
+}
+
+.storyboardButton{
+  background-color: pink;
+  color: #361601;
+  padding: 10px 20px 10px 20px;
+  margin-top: 14px;
+  margin-left: 20px;
+  border-radius: 20px;
+  position: fixed;
+  display: inline-block;
+
+}
+
+.storyboardButton:hover{
+  background-color:rgb(252, 222, 222);
+}
+
+
+#musicButton{
+  position: fixed;
+  bottom: 0.8%;
+  right: 0.5%;
+  background-color: pink;
+  border: none;
+  color: #361601;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 9px #361601;
+  border: 1px;
+}
+
+#musicButton:hover {
+  background-color: rgb(252, 222, 222);
+}
+
+#musicButton:active {
+  background-color: plum;
+  box-shadow: 0 5px #361601;
+  transform: translateY(4px);
+}
+
+.headerborder{
+  /*background-color: hsl(0, 0%, 0%, 0.7);*/
+  width: 70vw;
+  /*height: 13vh;*/
+  border-radius: 5px;
+  border-style:initial;
+  animation: fadeInAnimation ease 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-image: url('../resources/marble-bg.jpg');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.alternate {
+  flex-direction: row-reverse;
+}
+
+.layout {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 50px;
+}
+
+.leftaligned{
+  text-align: right;
+}
+
+.textcentralisedleft{
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.textcentralisedright{
+  padding-left: 20%;  
+  text-align: justify;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  margin-left: 300px;
+  margin-right: 300px;
+  height: 450px;
+  padding-bottom: 15px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding-bottom: 20px;
+}
+
+table, th, td {
+  border:2px solid #361601;
+}
+
+.textwhite{
+  color: white;
+}
+
+.shadebrown{
+  background-color: #361601;
+}
+
+.texttoright{
+  text-align: right;
+}
+
+.source{
+  position: absolute;
+  display:flex;
+  margin-bottom: 20px;
+}
+
+.fullwidthcontainer{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 1300px;
+  margin: auto;
+  text-align: justify;
+  line-height: 200%;
+  text-size-adjust: auto;
+  font-size: 1vw;
+  padding-left: 30px;
+}
+
+.fullwidthcontainerheader{
+  padding-left: 330px;
+}

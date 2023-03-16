@@ -1,16 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My NM2207 GitHub Portfolio</title>
-    <script src="scripts/counter.js"></script>
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <title>Michelle's Datastory</title>
+        <script defer type="text/javascript" src="appscripts/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
   <body>
-    <h1>Hello world! 🚀 こんいちわみんあさん　ʕ•́ᴥ•̀ʔっ</h1>
-    <h2>This is a site hosted on GitHub Pages.</h2>
-    <h3>Here's a hungry mouse. Please feed him!</h3>
-    <h3 class="mouse">🐁</h3>
-    <h3>Food counter: <span class="counter">0</span> 🥙</h3>
-    <button>Feed!</button>
-  </body>
+
+    
+    
+     <!--LANDING PAGE-->
+
+    <div id="landingpage">
+      <div class="img-1" style="background-image: url(./resources/snapchat.jpg);"></div>
+      <div class="img-2" style="background-image: url(./resources/tiktok.jpg);"></div>
+      <div class="img-3" style="background-image: url(./resources/facebook.jpg);"></div>
+      <div class="img-4" style="background-image: url(./resources/youtube.jpg);"></div>
+      <div class="img-5" style="background-image: url(./resources/pinterest.jpg);"></div>
+      <div class="img-6" style="background-image: url(./resources/telegram.jpg);"></div>
+      <div class="img-7" style="background-image: url(./resources/whatsapp.jpg);"></div>
+      <div class="img-8" style="background-image: url(./resources/twitter.jpg);"></div>
+      <div class="img-9" style="background-image: url(./resources/socialmedia.jpg);"></div>
+      <p  class="landingtext line-1 anim-typewriter highlighted">&nbspUnderstanding Social Media Usage & the impacts it has on us today.</p>
+      
+      <button id =timeout class="button" onclick="hidelandingpage()"><span>Find out now.</span></button>
+
+    </div>
+
+
+  <!--MAIN PAGE-->
+
+    <section id="mainpage" style="display:none">
+    
+      <div id="banner">
+      <img src="./resources/landingpagecover.jpg" alt="social media" width="100%" height="100%">    
+      </div>
+
+      <div id="statementborder"> 
+        <p id="bordertitle">Is Social Media good or bad for us today?</p>
+      </div>
+
+      <div>
+        <audio id="myAudio" src="./resources/cupidfiftyfifty.mp3" preload="auto" hidden></audio>
+        <button id="musicButton" onClick="togglePlay()"> 🎵 <br> Click to pause & play for <br> soothing music<br> as you read <br>🎵</button></div>
+      </div>
+
+
+      <div>
+      <!--<h1 id="questionheader">How Gen Zs are using Social Media & how it's impacting them today.</h1>-->
+      <img id="center" src="./resources/socialmediagif.gif" alt="social media" width="50%" height="100%">    
+      <h3 class="center"><br><br>Source: <a href="https://tenor.com/view/sushi-eats-eating-social-media-chopsticks-gif-14535157">Tenor</a><br></h3>
+      <h3 id="name"><br>A data story<br><br> by tay ching ting michelle <br><br><br></h3>
+      <p class="container1">In this day and age, social media has become almost a necessity for us. Furthermore, technology has advanced so rapidly that we even carry social media within our smart phones no matter where we are on the go. 
+        By definition, social media refers to the means of interactions among people in which they create, share, and/or exchange information and ideas in virtual communities and networks. 
+        Social media has become very essential in our daily lives for most of us. <br> <br> This data story seeks to provide you with more knowledge regarding the usage, impact, pros and cons of social media.
+       </div>
+
+      <div>
+      <br><br><br>
+      <h1 class="mainheaders headerborder">Social Media Usage</h1>
+      <br><br><br>
+
+      <!-- ROW 1-->
+
+      <div class="row">
+        <div class="column" >
+          <h2 class="underlinedheader underlined">Regional Social Media Users Worldwide (2022)</h2>
+          <p class="textcentralisedleft container2">According to Statista, in 2022, Eastern Asia accounted for over 1.1 billion social media users, the majority of which were located in China. Additionally, 
+            Southern Asia had a total of 847 million social media users, whilst central Africa was home to just over 21 million users. And, if we generalise the data just by looking at the main 4 regions, namely Asia, Pacific, America, Europe, Africa, 
+            the proportion shows that Asia alone constitute <b>60.8%</b> of all social media users worldwide. The generalised data can be found below as represented in pie charts and table form.</p>
+        </div>
+        <div class="column" >
+          <br>
+          <canvas id="regional-socialmedia-users-worldwide"></canvas> 
+          <p class="source"><center>Source: <a href="https://www.statista.com/statistics/454772/number-social-media-user-worldwide-region/">Statista</a></center></p>
+          <br><br><br><br>
+        </div>
+      </div>
+
+      <!-- ROW 2-->
+
+      <div class="row">
+        <div class="column" >
+          <br><br><br>
+          <canvas id="regional-socialmedia-users-worldwide2"></canvas> 
+          <p class="source"><center>Source: <a href="https://www.statista.com/statistics/454772/number-social-media-user-worldwide-region/">Statista</a></center></p>
+        </div>
+        <div class="column" >
+          <br><br><br><br><br><br>
+          <table class="center">
+            <tr class="textwhite shadebrown">
+              <th>Region</th>
+              <th>Number of users in Millions</th>
+              <th>% of users</th>
+            </tr>
+            <tr>
+              <td>Asia Pacific</td>
+              <td>2,790.69</td>
+              <td>60.8</td>
+            </tr>
+            <tr>
+              <td>America</td>
+              <td>769.40</td>
+              <td>16.8</td>
+            </tr>
+            <tr>
+              <td>Europe</td>
+              <td>658.03</td>
+              <td>14.3</td>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td>375.23</td>
+              <td>8.2</td>
+            </tr>
+          </table>
+        </div>
+        
+      </div>        
+      
+         <!-- ROW 3-->
+
+      <div class="row">
+        <div class="column" >
+          <br>
+          <canvas id="avgTimespentdailyapps-bar-chart"></canvas> 
+          <p class="source"><center>Source: <a href="https://www.statista.com/statistics/1322876/social-media-apps-time-spent-global/">Statista</a></center></p>
+        </div>
+        <div class="column" >
+   
+          <h2 class=" underlined texttoright">Average daily usage on Social Media worldwide (2022 Q2)</h2>
+          <p class="container3">Based on the daily average screen-time (in 2022 Q2, May-Aug), TikTok champions every other platforms with a daily average screen time of <b>95 minutes</b>. 
+            In a <a href="https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/">another survey</a>  done more recently in January 2023, <b>results showed that FaceBook was in fact regarded the most popular social media platforms of all time.</b>
+            However, TikTok still manages to beat FaceBook in terms of screen-time. This also means that <u>being the most popular social media platform does not guarantee a high average screen-time in comparison to others.</u>
+            </p>  
+
+          </div>
+      </div> 
+
+      <!--ROW 4 -->
+      
+      <div class="row">
+        <div class="column">
+          <br><br><br><br>
+          <h2 class="underlinedheader underlined">Growth of Instagram, Facebook, TikTok (2018 to 2022)</h2>
+
+          <p class="textcentralisedleft container2">Comparing the growth of Instagram, Facebook and TikTok, we can see that Facebook still tops the charts based on the absolute number of users during this period. On the other hand, Instagram 
+            is still ahead of TikTok, having more annual users. Instagram and TikTok both are increasing at a steady and similar rate. However, the growth trend for Facebook can be seen to be going stagnant from 2021 onwards as the growth 
+          of users from 2021 to 2022 was merely 23 million.</p>
+        </div>
+        <div class="column" >
+          <br> <br>
+          <!--<h2 class="underlined texttoright">Column 8</h2>-->
+          <canvas id="instafbtiktok-growth-trend-linechart"></canvas> 
+          <p class="source"><center>Source: <a href="https://www.businessofapps.com/data/app-data/">BusinessofApps</a></center></p>
+          <!--  <p>Some text..</p>-->
+        </div>
+      </div> 
+
+      <!--FULL WIDTH SECTION-->
+      <div>
+        <br><br>
+        <h2 class="fullwidthcontainerheader underlinedheader underlined">User Demographics of Instagram, Facebook and TikTok (By Age Group and Gender)</h2>
+        <p class="fullwidthcontainer">Now, let us look at the demographics of the social media platforms of TikTok, Facebook and Instagram. The following charts below presents the social media usage distribution by age group and by gender. 
+          These data are also based in 2022. The results tells us that <b>TikTok users are mostly contributed by people aged 18-24, whereas Instagram users are mostly those who are aged 25-34. Similar to Instagram, Facebook also shows that 
+          most of its users are aged 25-34.</b><br><br>
+          In addition, we can also see that the gender distribution for Instagram is almost identical as the only difference between the two gender percentage distribution is 1.6%. However, we can also observe that there are more male users 
+          than female users on Facebook and that there are more female users than male on TikTok.
+        </p>
+          <br><br><br>
+      </div>
+
+      <!-- ROW 5 -->
+
+      <div class="row">
+        <div class="column">
+          <canvas id="smAgegrp-bar-chart"></canvas> 
+          <p class="source"><center>Source: <a href="https://www.businessofapps.com/data/app-data/">BusinessofApps</a></center></p>
+        </div>
+        <div class="column" >
+          <br><br><br><br><br>
+          <canvas id="instafbtiktok-stacked-barchart"></canvas> 
+          <p class="source"><center>Source: <a href="https://www.businessofapps.com/data/app-data/">BusinessofApps</a></center></p>
+          <!--  <p>Some text..</p>-->
+        </div>
+      
+
+
+      
+    </section>
+
+ 
+
+    <!--StoryBoard-->
+
+    <section id="storyBoard" style="display:none" >
+      <div id="banner">
+        <img src="./resources/storyboardwallpaper.jpg" alt="social media" width="100%" height="100%">    
+      </div>
+      <div id="statementborder"> 
+        <p id="bordertitle">Welcome to Michelle's StoryBoard</p>
+      </div>
+
+      <div class="container1">
+      <h1 class="center underlined" >About</h1>
+        <p>In this research, the usage of social media and its impacts will be looked into. In addition, its advantages and disadvantages will be lightly touched on as well.
+          The outcome of this datastory is better inform users about these knowledge on social media, and to present the question—"Is social media good or bad for us today?" for users to think about, after reading my datastory. 
+          The outline of this datastory will flow in the following manner, (1)Social Media Usage, (2)Impacts, (4)Summary.
+        </p>
+        <br>
+      </div>
+
+    
+    <div class="marblebox">
+        <h1 class="storyboardheader underlined">background 🖼️</h1>
+        <p class="container2">Social media usage and impact research focuses on understanding how individuals and groups use social media platforms and how these platforms impact their behavior and attitudes.
+          Social media usage has rapidly grown over the last two decades, with platforms such as Facebook, Twitter, Instagram, and YouTube becoming integral parts of people's daily lives. 
+          The widespread adoption of social media has transformed the way people interact, communicate, and share information with each other. </p>
+    </div>
+
+    <div class="marblebox">
+      <h1 class="storyboardheader underlined"> Problem Statement❓ </h1>
+      <p class="container2"> "Is social media good or bad for us today?" </p>
+  </div>
+
+  <div class="marblebox">
+    <h1 class="storyboardheader underlined">Data 📊</h1>
+   
+    <p class="container2">In this research, the following data were looked into, cleaned, transformed and/or combined: </p>
+
+    <ul class="container2">
+
+      <!--USAGE-->
+      <li><a href="https://www.statista.com/statistics/454772/number-social-media-user-worldwide-region/">Number of social network users worldwide in 2022, by region</a></li>
+      <!--<li><a href="https://gs.statcounter.com/social-media-stats#monthly-201801-202212">Social Media Stats Worldwide from 2018 - 2022</a></li>-->
+      <li><a href="https://www.statista.com/statistics/1322876/social-media-apps-time-spent-global/">Average time spent (in minutes) using selected mobile social apps daily for users worldwide in 2nd quarter 2022</a></li>
+      <li><a href="https://www.businessofapps.com/data/tik-tok-statistics/">TikTok Statistics</a></li>
+      <li><a href="https://www.businessofapps.com/data/facebook-statistics/">Facebook Statistics</a></li>
+      <li><a href="https://www.businessofapps.com/data/instagram-statistics/">Instagram Statistics</a></li>
+      <!-- IMPACT -->
+      <li><a href="https://data.world/maheepmahat/data-of-usage-of-social-media-by-students-between-age-17-22">Survey: Effects of social media</a></li>
+      <li><a href="https://www.cloudwards.net/cyberbullying-statistics/2">Cyberbullying Statistics</a></li>
+      <li>*i am intending to find more sources</li>
+      
+    </ul>
+
+    
+  </div>
+
+    <div class="marblebox">
+        <h1 class="storyboardheader underlined">Analysis 📈</h1>
+        <p class="container2"><b>Usage:</b> Understand where all the users are coming from. Making comparisons with social media platforms (TikTok, Facebook, Instagram), as well as their demographics and trends.<br><br>
+        <b>Impact:</b>  *In progress <br><br>
+        <b>Summary:</b> *In progress </p>
+
+    </div>
+
+    <div class="marblebox">
+      <h1 class="storyboardheader underlined">Findings 🔎</h1>
+      <p class="container2">Social media usage and impact research has highlighted the potential benefits of social media, such as the ability to connect with others, access to diverse perspectives and information, and the opportunity to mobilize for social change. 
+        However, research has also identified potential negative impacts, such as the spread of misinformation, cyberbullying, and addiction to social media.
+      <br><br> 
+      *in progress</p>
+  </div>
+
+    <div class="marblebox">
+        <h1 class="storyboardheader underlined">Recommendation 🙌</h1>
+        <p class="container2">*In progress</p>
+    </div>
+
+
+
+
+
+
+
+  
+
+    </section>
+
+    <!--NAV BAR-->
+
+    <div class="navbar">
+      <button id =timeout2 class="storyboardButton" onclick="hidelandingpage2()"><span>View StoryBoard</span></button>
+      <button class="homeButton" onclick="hidelandingmainpage()"><span>Home</span></button>
+      <button class="weeklyprogressDiaryBut" onclick = "location.href='https://nm2207.org/2223S2/e1073625/web/projdiary/projdiary.html';"><span>Weekly Progress Diary</span></button>
+      <h1 class="text2"> NM2207 Final Project</h1>
+      
+      
+    </div>
+    
+    
+
+</body>
+
 </html>
