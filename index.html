@@ -40,6 +40,7 @@
   <!--MAIN PAGE-->
 
     <section id="mainpage" style="display:none">
+
     
       <div id="banner">
       <img src="./resources/landingpagecover.jpg" alt="social media" width="100%" height="100%">    
@@ -49,17 +50,42 @@
         <p id="bordertitle">Is Social Media good or bad for us today?</p>
       </div>
 
+        <!--STICKY CONTENT LIST BAR -->
+          <div class="contentlist">
+              <h1 class="center underlined" >Table of Content</h1>
+              <ol>
+                <li><b><a href="#smUsage">Social Media Usage</a></b></li>
+                <br>
+                <ul>
+                  <li><a href="#regionalusersww">Regional Users Worldwide</a><br><br></li>
+                  <li><a href="#avgdailyusageww">Average daily usage Worldwide</a><br><br></li>
+                  <li><a href="#growthtrend">Growth Trend of Instagram, Facebook, Tiktok</a><br><br></li>
+                  <li><a href="#usesofsm">Uses of Social Media</a><br><br></li>
+                </ul>
+                <li><a href="#impacts">Social Media Impacts</a></li>
+                <br>
+                <ul>
+                  <li><a href="#smProCons">Pros and Cons</a><br><br></li>
+                </ul>
+                <li>Social Media Fun Facts</li>
+                <li>Summary</li>
+              </ol>
+          </div>
+
       <div>
         <audio id="myAudio" src="./resources/cupidfiftyfifty.mp3" preload="auto" hidden></audio>
         <button id="musicButton" onClick="togglePlay()"> 🎵 <br> Click to pause & play for <br> soothing music<br> as you read <br>🎵</button></div>
       </div>
 
 
+
       <div>
       <!--<h1 id="questionheader">How Gen Zs are using Social Media & how it's impacting them today.</h1>-->
-      <img id="center" src="./resources/socialmediagif.gif" alt="social media" width="50%" height="100%">    
+      <img id="sushigif" src="./resources/socialmediagif.gif" alt="social media">   
+      
       <h3 class="center"><br><br>Source: <a href="https://tenor.com/view/sushi-eats-eating-social-media-chopsticks-gif-14535157">Tenor</a><br></h3>
       <h3 id="name"><br>A data story<br><br> by tay ching ting michelle <br><br><br></h3>
+      
       <p class="container1">In this day and age, social media has become almost a necessity for us. Furthermore, technology has advanced so rapidly that we even carry social media within our smart phones no matter where we are on the go. 
         By definition, social media refers to the means of interactions among people in which they create, share, and/or exchange information and ideas in virtual communities and networks. 
         Social media has become very essential in our daily lives for most of us. <br> <br> This data story seeks to provide you with more knowledge regarding the usage, impact, pros and cons of social media.
@@ -67,14 +93,17 @@
 
       <div>
       <br><br><br>
-      <h1 class="mainheaders headerborder">Social Media Usage</h1>
+      <h1 id="smUsage" class="mainheaders headerborder">Social Media Usage</h1>
+      </div>      
       <br><br><br>
 
-      <!-- ROW 1-->
+
+
+      <!-- ROW 1.1-->
 
       <div class="row">
         <div class="column" >
-          <h2 class="underlinedheader underlined">Regional Social Media Users Worldwide (2022)</h2>
+          <h2 id="regionalusersww" class="underlinedheader underlined">Regional Social Media Users Worldwide (2022)</h2>
           <p class="textcentralisedleft container2">According to Statista, in 2022, Eastern Asia accounted for over 1.1 billion social media users, the majority of which were located in China. Additionally, 
             Southern Asia had a total of 847 million social media users, whilst central Africa was home to just over 21 million users. And, if we generalise the data just by looking at the main 4 regions, namely Asia, Pacific, America, Europe, Africa, 
             the proportion shows that Asia alone constitute <b>60.8%</b> of all social media users worldwide. The generalised data can be found below as represented in pie charts and table form.</p>
@@ -87,7 +116,7 @@
         </div>
       </div>
 
-      <!-- ROW 2-->
+      <!-- ROW 1.2-->
 
       <div class="row">
         <div class="column" >
@@ -95,7 +124,7 @@
           <canvas id="regional-socialmedia-users-worldwide2"></canvas> 
           <p class="source"><center>Source: <a href="https://www.statista.com/statistics/454772/number-social-media-user-worldwide-region/">Statista</a></center></p>
         </div>
-        <div class="column" >
+        <div id="userinmil" class="column" >
           <br><br><br><br><br><br>
           <table class="center">
             <tr class="textwhite shadebrown">
@@ -128,7 +157,7 @@
         
       </div>        
       
-         <!-- ROW 3-->
+         <!-- ROW 1.3-->
 
       <div class="row">
         <div class="column" >
@@ -138,7 +167,7 @@
         </div>
         <div class="column" >
    
-          <h2 class=" underlined texttoright">Average daily usage on Social Media worldwide (2022 Q2)</h2>
+          <h2 id="avgdailyusageww" class=" underlined texttoright">Average daily usage on Social Media worldwide (2022 Q2)</h2>
           <p class="container3">Based on the daily average screen-time (in 2022 Q2, May-Aug), TikTok champions every other platforms with a daily average screen time of <b>95 minutes</b>. 
             In a <a href="https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/">another survey</a>  done more recently in January 2023, <b>results showed that FaceBook was in fact regarded the most popular social media platforms of all time.</b>
             However, TikTok still manages to beat FaceBook in terms of screen-time. This also means that <u>being the most popular social media platform does not guarantee a high average screen-time in comparison to others.</u>
@@ -147,12 +176,12 @@
           </div>
       </div> 
 
-      <!--ROW 4 -->
+      <!--ROW 1.4 -->
       
       <div class="row">
         <div class="column">
           <br><br><br><br>
-          <h2 class="underlinedheader underlined">Growth of Instagram, Facebook, TikTok (2018 to 2022)</h2>
+          <h2 id="growthtrend" class="underlinedheader underlined">Growth of Instagram, Facebook, TikTok (2018 to 2022)</h2>
 
           <p class="textcentralisedleft container2">Comparing the growth of Instagram, Facebook and TikTok, we can see that Facebook still tops the charts based on the absolute number of users during this period. On the other hand, Instagram 
             is still ahead of TikTok, having more annual users. Instagram and TikTok both are increasing at a steady and similar rate. However, the growth trend for Facebook can be seen to be going stagnant from 2021 onwards as the growth 
@@ -180,7 +209,7 @@
           <br><br><br>
       </div>
 
-      <!-- ROW 5 -->
+      <!-- ROW 1.5 -->
 
       <div class="row">
         <div class="column">
@@ -193,9 +222,144 @@
           <p class="source"><center>Source: <a href="https://www.businessofapps.com/data/app-data/">BusinessofApps</a></center></p>
           <!--  <p>Some text..</p>-->
         </div>
+        </div>
+
+        <div class="row">
+          <div class="column" >
+            <br>
+            <br><br><br>
+            <canvas id="reasonsfors-doughnut-chart"></canvas> 
+            <p class="source"><center>Source: <a href="https://www.oberlo.com/statistics/why-do-people-use-social-media">Oberlo</a></center></p>
+          </div>
+          <div class="column">
+            <br><br><br>
+            <h2 id="usesofsm" class=" underlined texttoright">Uses of Social Media (2023)</h2>
+            <p class="container3">
+              According to a <a href="https://datareportal.com/reports/digital-2023-global-overview-report">recent survey</a>, the largest reason people use social media is to 
+              connect with their friends and family. As expected, social media is designed mainly for this purpose. From profiles, messaging, and commenting options to sharing milestones and daily updates, 
+              there's very little about an individual (or even a business) that doesn't eventually find its way onto social media. Given that social media is visual content-heavy, 
+              it is fairly easy to consume, and offers infinite scrolling, its entertainment value is extremely high.</p> 
+            </div>
+        </div> 
+  
+
+        <!-- SOCIAL MEDIA IMPACTS  -->
+
+        <div>
+          <br><br><br>
+          <h1 id="impacts" class="mainheaders headerborder">Social Media Impacts</h1>
+        </div>      
+
+          <br><br>
+
+          <h2 id="smProCons" class="fullwidthcontainerheader underlinedheader underlined">Pros & Cons of Social Media</h2>
+
+          <p class="fullwidthcontainer">Now, before addressing the impacts social media has on us, let's learn a bit about the pros and cons of social media! click on the following buttons to read about social media pros and cons respectively.</p>
+          <br><br>
+
+          <input type="radio" class="radio-input" id="option1" name="options" value="option1">
+          <label for="option1" class="radio-label">Show me Social Media Advantages</label><br>
+          <input type="radio" class="radio-input" id="option2" name="options" value="option2">
+          <label for="option2" class="radio-label">Show me Social Media Disavantages</label><br>
+
+          <p id="surprisetable"></p>
+      
+          <!-- SM PROS TABLE -->
+
+          <div class="pro-cons-table" id="sm-pros" hidden>
+            
+            <table class="smprocons">
+              <tr class="textwhite shadebrown">
+                <th>Pros of Social Media</th>5
+              </tr>
+              <tr>
+                <td>A Place for Noble Causes and Practices</td>
+              </tr>
+              <tr>
+                <td>Use of Social Media for Promotion and Advertising</td>
+              </tr>
+              <tr>
+                <td>People Can Connect Through Social Media</td>
+              </tr>
+              <tr>
+                <td>Good Source of Up-to-Date Information</td>
+              </tr>
+              <tr>
+                <td>Social Media Is Beneficial to Education</td>
+              </tr>
+              <tr>
+                <td>Use Social Media To Drive Traffic To Your Website</td>
+              </tr>
+              <tr>
+                <td>Assists in the Formation of People’s Communities</td>
+              </tr>
+              <tr>
+                <td>Social Media Can Reach Large Audiences</td>
+              </tr>
+              <tr>
+                <td>Government Benefits from Social Media</td>
+              </tr>
+              <tr>
+                <td>Entertainment with Social Media</td>
+              </tr>
+            </table>
+            <p><center>Source: <a href="https://digitalscholar.in/pros-and-cons-of-social-media/">DigitalScholar</a></center></p>
+          </div>
+
+       <!-- SM CONS TABLE -->
+
+          <div class="pro-cons-table" id="sm-cons" hidden>
+            <br>
+            <table class="smprocons">
+              <tr class="textwhite shadebrown">
+                <th>Cons of Social Media</th>
+              </tr>
+              <tr>
+                <td>Cyberbullying  </td>
+              </tr>
+              <tr>
+                <td>Hacking on Social Media</td>
+              </tr>
+              <tr>
+                <td>Reduces Face-to-face Communication Skills  </td>
+              </tr>
+              <tr>
+                <td>Fake News</td>
+              </tr>
+              <tr>
+                <td>People’s Addiction to Social Media </td>
+              </tr>
+              <tr>
+                <td>Social Media Is Harmful to One’s Health </td>
+              </tr>
+              <tr>
+                <td>Spending Time on Social Media is a Waste of Time </td>
+              </tr>
+              <tr>
+                <td>Social Media Causes Sleep Issues </td>
+              </tr>
+              <tr>
+                <td>Social Media Cause Depression and Loneliness </td>
+              </tr>
+              <tr>
+                <td>Social Media Causes Distraction</td>
+              </tr>
+            </table>
+            <p><center>Source: <a href="https://digitalscholar.in/pros-and-cons-of-social-media/">DigitalScholar</a></center></p>
+          </div>
+          
+          
+          <p>hello!</p>
+
+
+        
+
+    
       
 
 
+    
+   
       
     </section>
 
@@ -211,13 +375,13 @@
         <p id="bordertitle">Welcome to Michelle's StoryBoard</p>
       </div>
 
-      <div class="container1">
-      <h1 class="center underlined" >About</h1>
-        <p>In this research, the usage of social media and its impacts will be looked into. In addition, its advantages and disadvantages will be lightly touched on as well.
+      <div>
+      <h1 class="center underlined">About</h1>
+        <p class="container1">In this research, the usage of social media and its impacts will be looked into. In addition, its advantages and disadvantages will be lightly touched on as well.
           The outcome of this datastory is better inform users about these knowledge on social media, and to present the question—"Is social media good or bad for us today?" for users to think about, after reading my datastory. 
-          The outline of this datastory will flow in the following manner, (1)Social Media Usage, (2)Impacts, (4)Summary.
+          The outline of this datastory will flow in the following manner, (1)Social Media Usage, (2)Impacts, (3)Social Media Fun Facts (4)Summary.
         </p>
-        <br>
+        <br><br><br>
       </div>
 
     
@@ -247,6 +411,7 @@
       <li><a href="https://www.businessofapps.com/data/tik-tok-statistics/">TikTok Statistics</a></li>
       <li><a href="https://www.businessofapps.com/data/facebook-statistics/">Facebook Statistics</a></li>
       <li><a href="https://www.businessofapps.com/data/instagram-statistics/">Instagram Statistics</a></li>
+      <li><a href="https://www.oberlo.com/statistics/why-do-people-use-social-media">Instagram Statistics</a></li>
       <!-- IMPACT -->
       <li><a href="https://data.world/maheepmahat/data-of-usage-of-social-media-by-students-between-age-17-22">Survey: Effects of social media</a></li>
       <li><a href="https://www.cloudwards.net/cyberbullying-statistics/2">Cyberbullying Statistics</a></li>
@@ -299,6 +464,8 @@
       
     </div>
     
+    
+
     
 
 </body>

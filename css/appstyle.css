@@ -39,7 +39,7 @@ body {
 }
 
 .underlinedheader{
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .underlinedheader2{
@@ -100,7 +100,7 @@ body {
 
 .storyboardheader{
   color: #361601;
-  padding-left: 30hommpx;
+  padding-left: 10px;
 }
 
 
@@ -413,9 +413,9 @@ section .img-1, section .img-2, section .img-3, section .img-4 section .img-5, s
   text-align: justify;
   line-height: 200%;
   text-size-adjust: auto;
-  font-size: 0.9vw;
+  font-size: 1vw;
   padding-bottom:25px;
-  padding-left: 30px;
+  padding-left: 10px;
   padding-right: 50px;
 }
 
@@ -642,9 +642,55 @@ table, th, td {
   line-height: 200%;
   text-size-adjust: auto;
   font-size: 1vw;
-  padding-left: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .fullwidthcontainerheader{
-  padding-left: 330px;
+  padding-left: 310px;
+}
+
+.contentlist {
+  background-color: rgb(252, 222, 222);
+  position: sticky;
+  top: 70px;
+  margin-left: 1640px;
+  margin-right: 0px;
+  border-radius: 10px;
+  border-style:dotted;
+  font-family: Garamond;
+  font-size: 14px;
+  padding-right: 16px;
+
+}
+
+#sushigif{
+  margin-left: 30%;
+  margin-right: auto;
+  margin-top: -320px;
+  left: 0;
+  right: 0;
+  top: 50%;
+  left:50%;
+  height: 40%;
+  width: 40%;
+}
+
+/*radio buttons*/
+.radio-input {
+  margin-left: 300px;
+  
+}
+
+.radio-label{
+  margin-left: 10px;
+  font-size: 1vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.smprocons{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

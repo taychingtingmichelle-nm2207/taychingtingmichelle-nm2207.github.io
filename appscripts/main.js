@@ -370,5 +370,53 @@ new Chart("instafbtiktok-stacked-barchart",
       }}});
 
 
-//let ctx = document.getElementById("myChart").getContext("2d");
-//new Chart(ctx, config)
+//reasonsfors-doughnut-chart DOUGHNUT CHART 
+
+const usesforSM = ["Keeping in touch with friends and family", "Filling spare time", "Reading news stories", "Finding content", "Seeing what's being talked about", "Finding inspirations for things to do and buy", "Finding products to purchase", "Watching live streams", "Sharing and discussing opinions with others", "Making new contacts"];
+const useforSMdata= [47.1,36.2,34.2,30.3,28.8,27.3,25.9,23.7,23.4,23.0];
+const barColors3 = [  "red","blue","green","yellow","pink", "purple","grey","brown","orange","plum"];
+
+
+new Chart("reasonsfors-doughnut-chart", {
+  type: "doughnut",
+  data: {
+    labels: usesforSM,
+    datasets: [{
+      backgroundColor: barColors3,
+      data: useforSMdata
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Top Uses of Social Media in 2023 (in %)",
+      fontFamily: "TrebuchetMS",
+      fontSize: 22,
+      fontColor: '#2b5797'
+    },
+    legend: {
+        display: true,
+        position: "left"   
+    }
+  
+  }
+});
+
+
+// radio button to show advantages and disadvantages
+
+let option1 = document.getElementById("option1");
+option1.addEventListener("change", function () {
+    
+    const smProTable = document.getElementById("sm-pros").innerHTML;
+    document.getElementById("surprisetable").innerHTML = smProTable; 
+    
+})
+
+let option2 = document.getElementById("option2");
+option2.addEventListener("change", function(){
+
+    const smConTable = document.getElementById("sm-cons").innerHTML;
+    document.getElementById("surprisetable").innerHTML = smConTable; 
+})
+     
