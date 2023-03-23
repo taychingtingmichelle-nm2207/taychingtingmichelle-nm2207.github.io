@@ -646,9 +646,21 @@ table, th, td {
   padding-right: 10px;
 }
 
+.fullwidthcanvas{
+  width: 1300px;
+  height: 500px;
+  margin: auto;
+}
+
 .fullwidthcontainerheader{
   padding-left: 310px;
+  font-family: Garamond;
 }
+.fullwidthcontainerheader2{
+  padding-right: 310px;
+  font-family: Garamond;
+}
+
 
 .contentlist {
   background-color: rgb(252, 222, 222);
@@ -661,8 +673,8 @@ table, th, td {
   font-family: Garamond;
   font-size: 14px;
   padding-right: 16px;
-
 }
+
 
 #sushigif{
   margin-left: 30%;
@@ -694,3 +706,4 @@ table, th, td {
   margin: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
