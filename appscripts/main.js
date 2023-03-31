@@ -77,6 +77,10 @@ function togglePlay() {
 
 
 
+
+
+
+
 // -----------------ALL DATA HERE --------------//
 
 //Regional usage1 HORIZONTAL BAR CHART
@@ -723,7 +727,7 @@ new Chart("mentalhealthandemoinfluences-radar-chart", {
     data: {
         labels: perception,
         datasets: [{
-            label: 'High Social-Emotional well being',
+            label: 'Low Social-Emotional well being',
             data: perception_dataset[0],
             fill: true,
             backgroundColor:'rgba(255, 99, 132, 0.2)',
@@ -920,8 +924,17 @@ new Chart("positiveffectsofsm-bar-chart",
       });
 
 
-  // SCATTER
-  
+  // SCATTER Line
+
+
+  const regression = [ ];
+
+  for (i=0;i<=17.89; i++){
+    yval = 53.761 - 0.333*i
+    regression.push({ x:i, y:yval})
+        }
+
+
       new Chart("associationbtwenanxietyscoreandwellbeingscore-scatterline-chart",{
           type: 'scatter',
           data: {
@@ -946,6 +959,10 @@ new Chart("positiveffectsofsm-bar-chart",
                     x: 13.59,
                     y: 50.14
                   },
+                  {
+                    x: 8.63,
+                    y: 50.89
+                  },
                 {
                     x: 12.31,
                     y: 47.75
@@ -957,9 +974,9 @@ new Chart("positiveffectsofsm-bar-chart",
           }, 
         {
             type: 'line',
-            label: 'Gradient',
-            data: [50.00,50.00,50.00,50.00,50.00,50.00,50.00],
-            fill: false,
+            label: 'Regression Line',
+            data: regression,
+            backgroundColor: 'transparent',
             borderColor: 'rgb(54, 162, 235)'
         }]
           },
@@ -984,4 +1001,6 @@ new Chart("positiveffectsofsm-bar-chart",
               }
           }
       });
+
       
+//    

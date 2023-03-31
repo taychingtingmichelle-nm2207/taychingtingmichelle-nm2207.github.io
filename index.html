@@ -10,6 +10,9 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/regression@2.0.1/dist/regression.min.js"></script>
+        
+        
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -69,12 +72,12 @@
                   <li><a href="#cyberBullying">Cyber Bullying</a><br><br></li>
                   <li><a href="#mentalhealthemotions">Mental Health & Emotional Influences</a><br><br></li>
                 </ul>
-                <li>Social Media Fun Facts</li>
-                <li>Summary</li>
+                <li><a href="#scFunFacts">Social Media Fun Facts</a><br><br></li>
+                <li><a href="#summary">Summary</a><br><br></li>
               </ol>
           </div>
 
-      <div>
+      <div id="audioid">
         <audio id="myAudio" src="./resources/cupidfiftyfifty.mp3" preload="auto" hidden></audio>
         <button id="musicButton" onClick="togglePlay()"> 🎵 <br> Click to pause & play for <br> soothing music<br> as you read <br>🎵</button></div>
       </div>
@@ -90,7 +93,7 @@
       
       <p class="container1">In this day and age, social media has become almost a necessity for us. Furthermore, technology has advanced so rapidly that we even carry social media within our smart phones no matter where we are on the go. 
         By definition, social media refers to the means of interactions among people in which they create, share, and/or exchange information and ideas in virtual communities and networks. 
-        Social media has become very essential in our daily lives for most of us. <br> <br> This data story seeks to provide you with more knowledge regarding the usage, impact, pros and cons of social media.
+        Social media has become very essential in our daily lives for most of us. <br> <br> This data story seeks to provide you with a more updated understanding in the usage and impact that social media has on us today.
        </div>
 
       <div>
@@ -557,7 +560,7 @@
             This cross sectional survey is done to assess the psychological impact of COVID-19 on the Indian public and the data was gathered after three weeks of commencement of 
             lock down in India from 426 respondents through snowball sampling. I have cleaned the data and created a chart to observe whether or not if anxiety scores and wellbeing scores are 
             correlated across the hourly usage of Indians aged 18 to 30, who are active users of social media with the usage between 5 to 12 hours daily. Turns out, the results in the scatter plot 
-            shows that the gradient line is overall negative, this means that there is a negative correlation.
+            shows that the regression(gradient) line is overall negative, this means that there is a negative correlation.
           </p>
           <br>
         </div>
@@ -587,11 +590,120 @@
             best thing man kind has ever invented to have created a technology to allow people to communicate digitally and now we can stay in touch with our friends and family no matter 
             where we are in the world. No doubt, it brings a lot of convenience and solutions to many things in our lives.
           </p>
-           <br>
        </div>
 
+       <div>
+        <br>
+        <h1 id="scFunFacts" class="mainheaders headerborder">Social Media Fun Facts</h1>
+      </div>     
 
+      <!-- ROW 1 Facts -->
+      <br><br>
 
+      <!--FULL WIDTH SECTION-->
+      <div>
+        <br>
+        <p class="fullwidthcontainer">
+          Here's a fun section where you can read up on certain fun facts about a particular social media platform. Simply hover your cursor over to the images to learn something about the platform.
+          How many of these facts did you already know? 
+        </p>
+          <br><br>
+      </div>
+
+      <div class="flex-container-funfact">
+   
+        <div>
+          <img class="factA" src="./resources/facebook.jpg" alt="social media" width="100%" height="100%">
+        </div>
+
+        <div>
+          <img class="factB" src="./resources/reddit.jpg" alt="social media" width="100%" height="100%">
+        </div>
+
+        <div>
+          <img class="factC" src="./resources/telegram.jpg" alt="social media" width="100%" height="100%">
+        </div>
+        
+      </div>
+      
+
+      <!-- ROW 2 Facts -->
+
+      <div class="flex-container-funfact">
+
+        <div>
+          <img class="factA" src="./resources/tiktok.jpg" alt="social media" width="100%" height="100%">
+        </div>
+
+        <div>
+          <img class="factB" src="./resources/youtube.jpg" alt="social media" width="100%" height="100%">
+        </div>
+        
+      </div>
+
+      <!-- ROW 3 Facts -->
+
+      <div class="flex-container-funfact">
+
+        <div>
+          <img class="factA" src="./resources/whatsapp.jpg" alt="social media" width="100%" height="100%">
+        </div>
+
+        <div>
+          <img class="factB" src="./resources/snapchat.jpg" alt="social media" width="100%" height="100%">
+        </div>
+
+        <div>
+          <img class="factC" src="./resources/pinterest.jpg" alt="social media" width="100%" height="100%">
+        </div>
+        
+      </div>
+
+      <!-- ROW 4 Facts -->
+
+      <div class="flex-container-funfact">
+
+        <div>
+          <img class="factA" src="./resources/instagram.jpg" alt="social media" width="100%" height="100%">
+        </div>
+
+        <div>
+          <img class="factB" src="./resources/linkedin.jpg" alt="social media" width="100%" height="100%">
+        </div>
+        
+      </div>
+
+      <!-- ROW 5 Facts -->
+
+      <div class="flex-container-funfact">
+
+        <div>
+          <img class="factA" src="./resources/line.jpg" alt="social media" width="100%" height="100%">
+        </div>
+
+        <div>
+          <img class="factB" src="./resources/wechat.jpg" alt="social media" width="100%" height="100%">
+        </div>
+
+        <div>
+          <img class="factC" src="./resources/tumblr.jpg" alt="social media" width="100%" height="100%">
+          <br><br><br>
+        </div>
+        
+      </div>
+
+      <div>
+        <br><br>
+        <h1 id="summary" class="mainheaders headerborder">Summary</h1>
+      </div>     
+
+      <div>
+        <br><br>
+        <p class="fullwidthcontainer">
+          in progress in progress in progress
+        </p>
+          <br><br>
+      </div>
 
 
         
@@ -631,7 +743,8 @@
         <h1 class="storyboardheader underlined">background 🖼️</h1>
         <p class="container2">Social media usage and impact research focuses on understanding how individuals and groups use social media platforms and how these platforms impact their behavior and attitudes.
           Social media usage has rapidly grown over the last two decades, with platforms such as Facebook, Twitter, Instagram, and YouTube becoming integral parts of people's daily lives. 
-          The widespread adoption of social media has transformed the way people interact, communicate, and share information with each other. </p>
+          The widespread adoption of social media has transformed the way people interact, communicate, and share information with each other. However, social media, being a very influential tool in our lives,
+          it is therefore important to understand how people today interact with it and ways that it is impacting us currently. </p>
     </div>
 
     <div class="marblebox">
@@ -667,12 +780,10 @@
       <li><a href="https://www.kaggle.com/datasets/apoorva1225/social-media-influence">Social Media Influence Survey 2018</a></li>
       <li><a href="https://www-statista-com.libproxy1.nus.edu.sg/statistics/207489/teenagers-personal-experiences-on-social-media-websites/?locale=en">Leading reasons why teenagers in the United States feel that social media has a mostly negative effect on people their own age as of April 2018</a></li>
       <li><a href="https://data.mendeley.com/datasets/sktz4xv4vh/2">Media Use Pattern with Respect to Mental Health in COVID-19: A Dataset from India</a></li>
-      <!--not used yet for impact-->
+      <!--
       <li><a href="https://data.world/maheepmahat/data-of-usage-of-social-media-by-students-between-age-17-22">Survey: Effects of social media</a></li>
       <li><a href="https://www.cloudwards.net/cyberbullying-statistics/2">Cyberbullying Statistics</a></li>
-
-      <li>*i am intending to find more sources</li>
-      
+      -->
     </ul>
 
     
@@ -680,18 +791,69 @@
 
     <div class="marblebox">
         <h1 class="storyboardheader underlined">Analysis 📈</h1>
-        <p class="container2"><b>Usage:</b> Understand where all the users are coming from. Making comparisons with social media platforms (TikTok, Facebook, Instagram), as well as their demographics and trends.<br><br>
-        <b>Impact:</b>  *In progress <br><br>
-        <b>Summary:</b> *In progress </p>
+        <!-- <p class="container2"><b>Usage:</b> Understand where all the users are coming from (Region wise). Making comparisons with social media platforms (A selected few), alongside with various their demographics and observable trends.<br><br>-->
+        <p class="container2"> 
+        <b>Usage</b> <br>
+        1. Finding out where users are coming from / the distribution across regions <br>
+        2. Comparing highest average screen time among popular social media platforms <br>
+        3. Comparing the growth trends among the selected top 3 social media platforms from 2018-2022 <br>
+        4. Comparing 3 social media platforms by their demographics (By Age Group & Gender) <br>
+        5. Looking into the purposes/reasons for social media usage <br><br>
+
+        <b>Impact </b> <br>
+        1. General pros and cons are first looked into and presented <br><br>
+        <i> --- Cyberbullying --- </i> <br>
+        2. Cyberbullying statistics were looked into, as well as parental awareness<br>
+        3. Types of medium used for cyberbullying was looked into among particular countries <br>
+        4. Cyberbullying statistics were also compared between genders (Based in US)<br>
+        5. Prevalence of cyberbullying and the type of online harrassment faced was looked into <br>
+        6. Prevalence of cyberbullying among older adults and comparing by age groups and severity <br><br>
+      
+        <i> --- Mental Health & Emotional Influences --- </i> <br>
+        7. Comparing emotional wellbeing among teenagers (Based in US). <br>
+        8. Comparing which generation perceives social media has a negative impact on social media <br>
+        9. Finding out whether social media is causing young adults to lose sleep <br>
+        10. Comparing reasons why people perceive social media to cause negative effects (Based in US) <br>
+        11. Finding out whether well being and anxiety scores are correlated
+        12. Finding out what people are perceiving to be the5 positive impacts of social media <br><br>
+
 
     </div>
 
     <div class="marblebox">
       <h1 class="storyboardheader underlined">Findings 🔎</h1>
-      <p class="container2">Social media usage and impact research has highlighted the potential benefits of social media, such as the ability to connect with others, access to diverse perspectives and information, and the opportunity to mobilize for social change. 
+
+      <p class="container2">
+        <b>Usage</b> <br>
+        1. Social media users are mostly contributed by people within the Asia Pacific Region, and esepcially Southeast Asia.<br>
+        2. Tiktok has the highest average screen time, followed by YouTube and then Instagram 
+        3. Tiktok's growth is increasing exponentially, Instagram is growing steadily and Facebook is increasing at a decreasing rate.
+        4. Aged 18-24 mostly uses Tiktok, Aged 25-34 mostly uses Instagram and Facebook.
+        5. Facebook users (males>female), Tiktok Users (female>males>others), Instagram users (female>males)
+        6. Most users are on social media because they wish to keep in touch with friends and family and the least reason is to make new contacts. <br><br>
+
+        <b>Impact </b> <br>
+        <i> --- Cyberbullying --- </i> <br>
+        7. Most parents are aware that cyberbullying most occurs on social network and the least likely platform they perceive their kids to be cyberbullied on is through an email.
+        8. Victims in china experienced cyberbullying most through mobile, whereas victims in India and Malaysia experiences cyberbullying mostly via social networks.
+        9. Most victims of cyberbullying identifies as transgender (Based in US)
+        10. Most middle and high school victims mostly experinece receiving mean or hurtful comments (Based in US)
+        11. Two thirds of people aged 30 or under have experienced some form of online harassment (Based in US) <br><br>
+
+        <i> --- Mental Health & Emotional Influences --- </i> <br>
+        12. 35% of teenagers with low social-emotional well-being reported to have been cyber bullied (Based in US)<br>
+        13. 36% of global respondents belonging to Gen Z felt that social media usage had a negative impact on social wellbeing in 2021 <br>
+        14. Sleep is not much of a cause of sleep deprivation (to my surprise) <br>
+        15. Teenagers perceive bullying/rumour spreading to be the leading reason social media has a negative effect on them <br>
+        16. Well being and anxiety scores are negatively correlated.<br>
+        17. Most positive leading reason for social media is to be able to connect with friends and family, as perceived by teenagers (Based in US) <br>
+
+      </p>
+
+      <!-- <p class="container2">Social media usage and impact research has highlighted the potential benefits of social media, such as the ability to connect with others, access to diverse perspectives and information, and the opportunity to mobilize for social change. 
         However, research has also identified potential negative impacts, such as the spread of misinformation, cyberbullying, and addiction to social media.
       <br><br> 
-      *in progress</p>
+      *in progress</p> -->
   </div>
 
     <div class="marblebox">
@@ -714,9 +876,9 @@
     <div class="navbar">
       <button id =timeout2 class="storyboardButton" onclick="hidelandingpage2()"><span>View StoryBoard</span></button>
       <button class="homeButton" onclick="hidelandingmainpage()"><span>Home</span></button>
-      <button class="weeklyprogressDiaryBut" onclick = "location.href='https://nm2207.org/2223S2/e1073625/web/projdiary/projdiary.html';"><span>Weekly Progress Diary</span></button>
+      <button class="weeklyprogressDiaryBut" onclick = "window.open('https://nm2207.org/2223S2/e1073625/web/projdiary/projdiary.html','_blank')"><span>Weekly Progress Diary</span></button>
+      <button class="writeupBut" onclick = "window.open('https://docs.google.com/document/d/1NwoO_QfkWRqTbTnKy2G186iMa7LTAcVJOZt0Pe4Hcnk/edit?usp=sharing','_blank')"><span>Final Write Up Document</span></button>
       <h1 class="text2"> NM2207 Final Project</h1>
-      
       
     </div>
     

@@ -203,6 +203,21 @@ td, th {
   background-color:rgb(252, 222, 222);
 }
 
+.writeupBut{
+  background-color: pink;
+  color: #361601;
+  padding: 10px 20px 10px 20px;
+  margin-top: 14px;
+  margin-left: 480px;
+  border-radius: 20px;
+  position: fixed;
+  display: inline-block;
+}
+
+.writeupBut:hover{
+  background-color:rgb(252, 222, 222);
+}
+
 #timeout{
   visibility: hidden;
 }
@@ -679,7 +694,7 @@ table, th, td {
 #sushigif{
   margin-left: 30%;
   margin-right: auto;
-  margin-top: -320px;
+  margin-top: -450px;
   left: 0;
   right: 0;
   top: 50%;
@@ -691,7 +706,6 @@ table, th, td {
 /*radio buttons*/
 .radio-input {
   margin-left: 300px;
-  
 }
 
 .radio-label{
@@ -706,4 +720,28 @@ table, th, td {
   margin: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.flex-container-funfact {
+  padding-left:275px;
+  padding-right: 275px;
+  display: flex;
+  background-color: black;
+
+}
+
+.flex-container-funfact > div{
+  margin: 10px;
+  padding-top: 5px;
+}
+
+.flex-container-funfact > div:hover{
+  filter: blur(2px);
+  transition: all 0.3s;
+  margin: 10px;
+  padding: 3px;
+}
+
+
+
+
 
