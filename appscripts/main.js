@@ -879,7 +879,7 @@ new Chart("adultslosingsleep-radar-chart", {
     });
 
 //positive reasons for social media verical BAR CHART
-const posReasonsforSM = ["Connecting with friends/family", "Easier to find news/info", "Meeting others with the same interest", "Keeps you entertained", "Self-expression", "Others", "Getting support frmo others", "Learning new things"];
+const posReasonsforSM = ["Connecting with friends/family", "Easier to find news/info", "Meeting others with the same interest", "Keeps you entertained", "Self-expression", "Others", "Getting support from others", "Learning new things"];
 const posReasonsforSM_data= [40,16,14,9,7,6,5,4];
 
 const posReasonsforSM_dataObj = {
@@ -1002,5 +1002,67 @@ new Chart("positiveffectsofsm-bar-chart",
           }
       });
 
+      //DISPLAY BOXPLOT
+
+      const young = {
+        y: [5,5,5,5,5,5,5,5,5,5,5,
+            6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,
+            7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
+            8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,
+            9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,
+            10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,
+            12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,
+            13,13,13,13,13,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,14,14,14,15,15,16,16],
+        type: 'box',
+        name: 'Young'
+      };
       
-//    
+      const mid = {
+        y: [4,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,
+            10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,12,12,12,13,13,14,16],
+        type: 'box',
+        name: 'Mid'
+      };
+
+      const old = {
+        y: [5,5,5,6,6,6,7,8,8,9,9,12],
+        type: 'box',
+        name: 'Old'
+      };
+      
+      const data = [young,mid,old];
+      
+      const layout = {
+        title: {
+            text: "Media Usage by Age Category",
+            font: { size: 24 }
+          },
+          xaxis: {
+            title: "Age Categories"
+          },
+          yaxis: {
+            title: "Average Daily Media Usage in Hours"
+          },
+          showlegend: true,
+          legend: {
+          orientation: "h",
+           x: 0.34,
+            y: -0.20,
+          },
+          annotations: [
+            {
+              text: 'Among Young (Aged 18-38), Mid (39-59), Old (61-79) Age Categories',
+              xref: 'paper',
+              yref: 'paper',
+              x: 0.51,
+              y: 1.1,
+              showarrow: false,
+              font: {
+                size: 16
+              }
+            }
+          ]
+        };
+      
+      Plotly.newPlot('boxplot', data, layout);
+      
