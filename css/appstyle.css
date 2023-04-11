@@ -221,6 +221,70 @@ td, th {
   background-color:black;
 }
 
+.pusheen5{
+  position: absolute;
+  top: 8px;
+  height: 80%;
+  right: 756px;
+}
+
+.pusheen6{
+  position: absolute;
+  top: -20px;
+  height: 150%;
+  right: 97px;
+}
+
+.pusheen7{
+  position: absolute;
+  top: 2px;
+  height: 100%;
+  right: 20px;
+}
+
+.pusheen8{
+  position: absolute;
+  top: 2px;
+  height: 100%;
+  right: 220px;
+}
+
+.pusheen9{
+  position: absolute;
+  top: -10px;
+  height: 120%;
+  right: 310px;
+}
+
+.pusheen10{
+  position: absolute;
+  top: -20px;
+  height: 130%;
+  right: 410px;
+}
+
+.pusheen11{
+  position: absolute;
+  top: 1px;
+  height: 100%;
+  right: 1105px;
+}
+
+.pusheen12{
+  position: absolute;
+  top: 1px;
+  height: 100%;
+  right: 577px;
+}
+
+.pusheen13{
+  position: absolute;
+  top: 2px;
+  height: 100%;
+  right: 670px;
+}
+
+
 #timeout{
   visibility: hidden;
 }
@@ -258,7 +322,8 @@ td, th {
 
 .navbar {
   overflow: hidden;
-  background-color: #14131275;
+  /*background-color: #362009;*/
+  background-image: url('../resources/blackflowers.jpg');
   position: fixed;
   top: 0;
   width: 100%;
@@ -346,7 +411,7 @@ section .img-1, section .img-2, section .img-3, section .img-4 section .img-5, s
 /*---------------------------------------------*/
 
 @keyframes crossfade {
-	/* This is the default behaviour as described by Jonathan Snook*/
+	/* This is the default behaviour*/
 	00.00%	{ opacity: 0; }
 	06.25%	{ opacity: 1; }
 	25.00%	{ opacity: 1; }
@@ -363,7 +428,7 @@ section .img-1, section .img-2, section .img-3, section .img-4 section .img-5, s
 	100.0%	{ opacity: 0; z-index: -16; }
 }
 
-/* Animating a clip-path in Google Chrome can destroy performance...it's crazy CPU intensive */
+/* Animating a clip-path in Google Chrome can destroy performance*/
 @keyframes iris {
 	00.0%	{ clip-path: circle(0% at 50% 0%); z-index: -10; }
 	12.5%	{ clip-path: circle(120% at 50% 0%); z-index: -10; }
@@ -546,9 +611,11 @@ section .img-1, section .img-2, section .img-3, section .img-4 section .img-5, s
 
 #musicButton{
   position: fixed;
-  bottom: 0.8%;
-  right: 0.5%;
-  background-color: pink;
+  bottom: 2.0%;
+  right: 1.0%;
+  background-image: url('../resources/marble-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
   border: none;
   color: #361601;
   padding: 20px;
@@ -568,11 +635,12 @@ section .img-1, section .img-2, section .img-3, section .img-4 section .img-5, s
 }
 
 #musicButton:hover {
-  background-color: rgb(252, 222, 222);
+  background-image: url('../resources/milkyway.jpg');
+  color: #fcfcfc;
 }
 
 #musicButton:active {
-  background-color: plum;
+  background-image: url('../resources/milkyway.jpg');
   box-shadow: 0 5px #361601;
   transform: translateY(4px);
 }
@@ -708,7 +776,10 @@ table, th, td {
 
 
 .contentlist {
-  background-color: rgb(252, 222, 222);
+  /*background-color: rgb(252, 222, 222);*/
+  background-image: url('../resources/marble-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
   position: sticky;
   top: 70px;
   margin-left: 1640px;
@@ -734,8 +805,8 @@ table, th, td {
 }
 
 /*radio buttons*/
-.radio-input {
-  margin-left: 300px;
+.radio-input {  
+  margin-left: 300px;   
 }
 
 .radio-label{
@@ -905,6 +976,8 @@ table, th, td {
 .pusheen-container > div {
   margin: 10px;
 }
+
+
 
 #boxplot{
   margin-left: auto;

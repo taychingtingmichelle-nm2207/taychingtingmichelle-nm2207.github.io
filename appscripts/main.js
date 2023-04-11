@@ -1,15 +1,9 @@
-// main.js 3100
 
+//get the time out element id and those with this id will be set to visible after 100milliseconds.
 const get = document.getElementById('timeout')
 setTimeout(() => {
     get.style.visibility = 'visible';
-    }, 100);
-
-    
-const get2 = document.getElementById('timeout2')
-setTimeout(() => {
-    get2.style.visibility = 'visible';
-    }, 100);
+    }, 1200);
 
 function hidelandingpage(){ // SHOW MAIN PAGE AND HIDE THE REST
   let page = document.getElementById("mainpage");
@@ -54,31 +48,32 @@ let barColors = [
   'rgb(90, 291, 32)',
   'rgb(120, 10, 43)' ]  
 
+  // to execute function upon opening loading the page
   window.addEventListener('load', function(){
+    // get the element id of myAudio
     let myAudio = document.getElementById("myAudio");
     
+    //set isplaying to true on play
     myAudio.onplaying = function() {
       isPlaying = true;
     };
+
+    //set isplaying to false on pause
     myAudio.onpause = function() {
       isPlaying = false;
     };
 });
 
+//let is playing to be set to false at first so music doesnt play first unless button is pressed.
 let isPlaying = false;
 
+// declare function to toggle between play and pause
 function togglePlay() {
     if (isPlaying) {
         myAudio.pause()
     } else {
         myAudio.play();
-    }
-}
-
-
-
-
-
+    }}
 
 
 // -----------------ALL DATA HERE --------------//
@@ -96,9 +91,8 @@ const RegionalSMstatsObj = {
           borderWidth: 2,
           backgroundColor: ["hsla(20,100%,80%,0.8)","hsl(358, 97%, 34%)","hsl(358, 97%, 20%)", "hsl(358, 97%, 29%)","hsl(358, 97%, 33%)", "hsl(358, 97%, 37%)" ,"hsl(358, 97%, 40%)", "hsl(358, 97%, 39%)", "hsl(358, 97%, 42%)", "hsl(358, 97%, 44%)", "hsl(358, 97%, 55%)", "hsl(358, 97%, 63%)","hsl(358, 97%, 69%)", "hsl(358, 97%, 76%)", "hsl(358, 97%, 83%)" , "hsl(358, 97%, 83%)", "hsl(358, 97%, 83%)", "hsl(358, 97%, 83%)", "hsl(358, 97%, 83%)"],
           borderColor: "black"
-      }
-  ]
-}
+      }]}
+
 new Chart("regional-socialmedia-users-worldwide",
       {
           type: "horizontalBar",
@@ -124,13 +118,10 @@ new Chart("regional-socialmedia-users-worldwide",
                     label: function(tooltipItems, data) {
                         return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.xLabel + ' Million';
                     }
-                }},
-          }
-      });
+                }},}});
 
 
 //Regional usage2 PIE CHART 
-
 const labelRegion2 = ["Asia Pacific", "America", "Europe", "Africa"];
 const usersinMM2= [2790690000,769400000,658030000,375230000];
 const barColors2 = [  "#b91d47","#00aba9","#2b5797","#e8c3b9","#1e7145"];
@@ -164,17 +155,10 @@ new Chart("regional-socialmedia-users-worldwide2", {
           },
           title: function(tooltipItem, data) {
               return data.labels[tooltipItem[0].index];
-              
-          }
-      }
-  },
-  
-  }
-});
+              }}},}});
 
 
 //TIME SPENT VERTICAL BAR CHART
-
 const app = ["Tiktok", "Youtube", "Instagram", "Facebook", "Snapchat"];
 const minutes= [95,74,51,49,21];
 
@@ -187,9 +171,8 @@ const timespentAppsObj = {
           borderWidth: 2,
           backgroundColor: ["hsl(121, 40%, 27%)", "hsl(121, 40%, 39%)", "hsl(121, 66%, 45%)", "hsl(121, 81%, 57%)", "hsl(121, 99%, 83%)"],
           borderColor: "black"
-      }
-  ]
-}
+      }]}
+      
 new Chart("avgTimespentdailyapps-bar-chart",
       {
           type: "bar",
@@ -218,12 +201,10 @@ new Chart("avgTimespentdailyapps-bar-chart",
                 }],
                 yAxes: [{
                     stacked: true
-                }]}}
-      });
+                }]}}});
 
 
 // LINE GRAPH FOR TIKTOK INSTA FB GROWTH 2018 TO 2022 
-
 let years = [2018, 2019, 2020, 2021, 2022];
 let ttdata = [133,381,700,902,1466];
 // For drawing the lines
@@ -253,9 +234,7 @@ new Chart("instafbtiktok-growth-trend-linechart",{
                 label: "Facebook",
                 borderColor: "#3cba9f",
                 fill: false
-              }
-        ]
-    },
+              }]},
 
     options: { 
       responsive: true,
@@ -270,17 +249,13 @@ new Chart("instafbtiktok-growth-trend-linechart",{
           fontFamily: "TrebuchetMS",
           fontSize: 18,
           fontColor: '#2b5797'
-      },
-  }
-});
+      },}});
 
 
 // BAR GRAPH FOR TIKTOK FB INSTA COMPARING AGE GROUP
 
 const agegroup = ["13-17", "18-24", "25-34", "35-44", "45-54", "55+"];
-    
-
-   
+       
 const agegroupdataObj = {
     labels: agegroup,           
     datasets: [
@@ -304,10 +279,8 @@ const agegroupdataObj = {
             borderWidth: 2,
             backgroundColor: "hsl(197, 73%, 50%, 0.5)",
             borderColor: "rgb(0,0,0)"
-        }
-        
-    ],
-}
+        }],}
+
 new Chart("smAgegrp-bar-chart",
         {
             type: "bar",
@@ -324,13 +297,10 @@ new Chart("smAgegrp-bar-chart",
                     fontFamily: "TrebuchetMS",
                     fontSize: 24,
                     fontColor: 'rgb(0,120,0)',
-                }
-            }
-        });
+                }} });
 
 
   // 100% STACKED BAR CHART TO COMPARE TIKTOK FACEBOOK INSTA BY GENDER 
-
   const stackedbarchartObj = {
   
         labels: ["TikTok", "Facebook", "Instagram"],
@@ -411,22 +381,21 @@ new Chart("reasonsfors-doughnut-chart", {
     legend: {
         display: true,
         position: "left"   
-    }
-  
-  }
-});
+    }}});
 
 
 // radio button to show advantages and disadvantages
-
+// let get the element id of option1 radio option and store it in option1 variable
 let option1 = document.getElementById("option1");
+
 option1.addEventListener("change", function () {
-    
+    //show pro table when radio button option is picked after getting its innerHTML.
     const smProTable = document.getElementById("sm-pros").innerHTML;
     document.getElementById("surprisetable").innerHTML = smProTable; 
     
 })
 
+// do the same for the 2nd radio button
 let option2 = document.getElementById("option2");
 option2.addEventListener("change", function(){
 
@@ -435,11 +404,8 @@ option2.addEventListener("change", function(){
 })
     
   // BAR CHART FOR PARENTS AWARENESS ON CYBERBULLYING 
-
   const regions_cyberbullying = ["APAC", "Europe", "LATAM", "Middle East/Africa", "North America"];
     
-
-   
 const regionalcb_dataobj = {
     labels: regions_cyberbullying,           
     datasets: [
@@ -491,10 +457,8 @@ const regionalcb_dataobj = {
             borderWidth: 2,
             backgroundColor: "hsl(62, 97%, 59%)",
             borderColor: "rgb(0,0,0)"
-        }
-        
-    ],
-}
+        }],}
+
 new Chart("cyberbullyingaccordingtoparentsbyregion-bar-chart",
         {
             type: "bar",
@@ -511,14 +475,10 @@ new Chart("cyberbullyingaccordingtoparentsbyregion-bar-chart",
                     fontFamily: "TrebuchetMS",
                     fontSize: 24,
                     fontColor: 'rgb(0,120,0)',
-                },
-                
-            }
-        });
+                },}});
 
 
 //RADAR CHART, TYPE OF ONLINE MEDIUM
-
 const medium = ["Social networks", "Mobile", "Online Messaging", "Online chat room", "E-mail", "Other Websites", "Other technology"];
 const medium_dataset = [[23,58,57,53,25,8,1],[66,44,47,50,44,16,5],[71,57,33,31,23,19,9]];
 const countrychildren = ["China", "India", "Malaysia"];
@@ -590,8 +550,6 @@ new Chart("typeofonlinemedium-chart", {
               fill: true,
               backgroundColor:['rgba(10, 99, 132, 0.2)','rgba(66, 162, 235, 0.2)','rgba(240, 162, 235, 0.2)'],
               borderColor: ['rgba(10, 99, 132, 0.9)','rgba(66, 162, 235, 0.9)','rgba(240, 162, 235, 0.9)']
-              
-              
       }]},
       options: {
         title: {
@@ -607,9 +565,6 @@ new Chart("typeofonlinemedium-chart", {
         }
       }
     });
-
-
-''
 
 //Horizontal Bar Chart - types of cb in US
 const typesofCb = ["I have been cyberbullied", "Mean or hurtful comments online", "Rumors online", "Threatened to hurt me through a cell phone text", "Posted mean remarks with implied sexual meaning", "Threatened to hurt me online", "Posted a mean or hurtful picture online of me","Pretended to be me online", "Posted mean remarks about my race or color", "Posted a mean or hurtful video online of me", "Posted mean names or comments online about my religion", "Created a mean or hurtful web page about me", "One or more of above, two or more times"];
@@ -926,11 +881,14 @@ new Chart("positiveffectsofsm-bar-chart",
 
   // SCATTER Line
 
-
+  //create an empty array called regression to store datapoints later
   const regression = [ ];
 
+  //loop the x values across the data points until the max 17.89 is reached then add the data points into the array)
   for (i=0;i<=17.89; i++){
+    //regression line equation that governs the line
     yval = 53.761 - 0.333*i
+    //add the points into the array
     regression.push({ x:i, y:yval})
         }
 

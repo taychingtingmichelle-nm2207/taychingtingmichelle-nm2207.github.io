@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
-        <title>Michelle's Datastory</title>
-        <script defer type="text/javascript" src="appscripts/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/regression@2.0.1/dist/regression.min.js"></script>
-        <script src='https://cdn.plot.ly/plotly-2.20.0.min.js'></script>
-        <link rel="icon"  href="./resources/pusheenpng2.png">
-        
-        
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+      <title>Michelle's Datastory</title>
+      <script defer type="text/javascript" src="appscripts/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/regression@2.0.1/dist/regression.min.js"></script>
+      <script src='https://cdn.plot.ly/plotly-2.20.0.min.js'></script>
+      <link rel="icon"  href="./resources/pusheenpng2.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
 
   <body>
 
-    
-    
-     <!--LANDING PAGE-->
-
+<!--LANDING PAGE-->
     <div id="landingpage">
       <div class="img-1" style="background-image: url(./resources/snapchat.jpg);"></div>
       <div class="img-2" style="background-image: url(./resources/tiktok.jpg);"></div>
@@ -36,39 +30,28 @@
       <div class="img-8" style="background-image: url(./resources/twitter.jpg);"></div>
       <div class="img-9" style="background-image: url(./resources/socialmedia.jpg);"></div>
       <p  class="landingtext line-1 anim-typewriter highlighted">&nbspUnderstanding Social Media Usage & the impacts it has on us today.</p>
-      
       <button id =timeout class="button" onclick="hidelandingpage()"><span>Find out now.</span></button>
-
     </div>
 
 
-  <!--MAIN PAGE-->
-
+<!--MAIN PAGE-->
     <section id="mainpage" style="display:none">
+      
+      <div id="banner"><img src="./resources/landingpagecover.jpg" alt="social media" width="100%" height="100%"></div>
+      <div id="statementborder"><p id="bordertitle">Is Social Media good or bad for us today?</p></div>
 
-    
-      <div id="banner">
-      <img src="./resources/landingpagecover.jpg" alt="social media" width="100%" height="100%">    
-      </div>
-
-      <div id="statementborder"> 
-        <p id="bordertitle">Is Social Media good or bad for us today?</p>
-      </div>
-
-        <!--STICKY CONTENT LIST BAR -->
+<!--STICKY CONTENT LIST BAR -->
           <div class="contentlist">
               <h1 class="center underlined" >Table of Content</h1>
               <ol>
-                <li><b><a href="#smUsage">Social Media Usage</a></b></li>
-                <br>
+                <li><b><a href="#smUsage">Social Media Usage</a></b></li><br>
                 <ul>
                   <li><a href="#regionalusersww">Regional Users Worldwide</a><br><br></li>
                   <li><a href="#avgdailyusageww">Average daily usage Worldwide</a><br><br></li>
                   <li><a href="#growthtrend">Growth Trend of Instagram, Facebook, Tiktok</a><br><br></li>
                   <li><a href="#usesofsm">Uses of Social Media</a><br><br></li>
                 </ul>
-                <li><b><a href="#impacts">Social Media Impacts</a></b></li>
-                <br>
+                <li><b><a href="#impacts">Social Media Impacts</a></b></li><br>
                 <ul>
                   <li><a href="#smProCons">Pros and Cons</a><br><br></li>
                   <li><a href="#cyberBullying">Cyber Bullying</a><br><br></li>
@@ -114,7 +97,7 @@
       <div class="row">
         <div class="column" >
           <h2 id="regionalusersww" class="underlinedheader underlined">Regional Social Media Users Worldwide (2022)</h2>
-          <p class="textcentralisedleft container2">According to Statista, in 2022, Eastern Asia accounted for over 1.1 billion social media users, the majority of which were located in China. Additionally, 
+          <p class="textcentralisedleft container2">In 2022, Eastern Asia accounted for over 1.1 billion social media users, the majority of which were located in China. Additionally, 
             Southern Asia had a total of 847 million social media users, whilst central Africa was home to just over 21 million users. And, if we generalise the data just by looking at the main 4 regions, namely Asia, Pacific, America, Europe, Africa, 
             the proportion shows that Asia alone constitute <b>60.8%</b> of all social media users worldwide. The generalised data can be found below as represented in pie charts and table form.</p>
         </div>
@@ -456,9 +439,8 @@
                 <br>
               </div>
               <div class="column" >
-                <br><br><br>
-                <canvas id="usAdultscb-stacked-bar-chart"></canvas>
                 <br>
+                <canvas id="usAdultscb-stacked-bar-chart"></canvas>
                 <p class="source"><center>Source: <a href="https://www-statista-com.libproxy1.nus.edu.sg/statistics/1228380/us-online-harassment-by-age-group/?locale=en">Statista</a></center></p>
               </div>
             </div>     
@@ -471,9 +453,9 @@
           <br><br><br><br><br><br><br><br>
           <h2 id="mentalhealthemotions" class="underlinedheader underlined">Mental Health & Emotional Influences</h2>
           <p class="textcentralisedleft container2">The next significant effect social media has on the general public today is none other than mental health. 
-            When you see someone post about how great their life is online, some people can't help but to compare themselves with others. Doing so usually causes users who 
-            struggle with low self-esteem to feel less about themselves.
-            Some may even develop social media addiction and no longer seek authentic social interaction, which can eventually leads to depression and isolation.
+            Some people can't help but to compare themselves with what their peers put online. Social media then becomes a platform where you develop a certain set of norms or standards and 
+            and one such example can be women's current beauty standard.
+            Some may even develop social media addiction and no longer seek authentic social interaction, which can eventually lead to depression and isolation.
           </p>
         </div>
         <div class="column" >
@@ -872,23 +854,19 @@
   </div>
 
     <!--FULL WIDTH ROW FUN FACTS SECTION  -->
-      <div>
+    <div>
         <div class="fullwidthcontainer">
           <br>
         <p>
-          How many of these facts did you know? Isn't it shocking to see how powerful social media is? We hope you learned something fun about them today!  
+          How many of these facts did you know? Isn't it shocking to see how powerful social media is? We hope you learned something interesting today!  
         </p>
-     </div>
+        </div>
 
 
       <!-- SUMMARY -->
-  <div>
-    <br><br>
-    <h1 id="summary" class="mainheaders headerborder">SUMMARY</h1>
-  </div>     
+      <div><br><br><h1 id="summary" class="mainheaders headerborder">SUMMARY</h1></div>     
 
-      <div>
-        <br><br>
+      <div><br><br>
         <p class="fullwidthcontainer">
           Today, social media has become an integral part of our daily lives, and it has brought both positive and negative impacts on 
           individuals and society. It has revolutionized the way we communicate, share information, and connect with others. 
@@ -911,15 +889,41 @@
 
          <p class="fullwidthcontainer">
           <br>
-          in progrss in progress in progress
+          Everyone has to be responsible in regulating their usage of social media in a manner that isn't detrimental to their mental health. Parents should be more involved with the lives of 
+          their children and monitor their behaviour online, though it should not be done excessively to the point it violates their privacy or personal boundaries. 
+          Although parents should pay more attention to their children's digital presence and behaviour, 
+          I can also understand why it can be hard for parents to interfere or to provide a direct solution to help their kids to stop getting cyberbullied. 
+          The thing is, cyberbullying or even bullying is a very 'mental' thing and to put it bluntly, it will not stop unless the person who is bullying stops. 
+          it may or may not be solved by filing a compliant to the school. Of course, if there are evidence to prove of that the bullying happened, then the perpetrator will face
+          consequences but in the event, the cyberbullying is done privately among a small community then it makes the situation even more complex.
+          Those in power to influence negatively will continue to hurt others by making people fear them. As long as people at the side choose not to act and stay fearful, things will never change. 
+          Cyberbullying is vicious and to learn more about it, you may read more 
+          <a href="https://creativeportfolioweb.wixsite.com/michelletay/post/cyberbullying-its-effects-prevention-and-how-to-deal-with-it" target="_blank" rel="noopener noreferrer">here</a> and 
+          <a href="https://creativeportfolioweb.wixsite.com/michelletay/post/cyberbullying-dont-be-a-bystander" target="_blank" rel="noopener noreferrer">here</a> to find my articles on Cyberbullying.
+          <br><br>
+          <b>In addition, youths should receiver stronger and more focused education on how to be safe and responsible online, starting from a young age.</b> Children today 
+          grow up with advanced technology and are becoming more digitally literate. This emphasises how important it is for us who know better to provide them with the knowledge 
+          they need to be safe and responsible with the power social media has. Especially for victims of cyberbullying, they should also be educated and be well-informed about the help
+          they could get and learn how to reach out. 
+          <br><br>
+          Even if the issue isn't cyberbullying, other issues that are evident are social comparison and addiction. When we use social media and get to see what others are up to, 
+          it becomes a source of comparison and if you don't feel that you are comparable to someone you compare yourself to, you will feel less about yourself. In the end, you will feel inadequate or inferior. 
+          Furthermore, having an addiction can lead to depression and other sorts of mental illnesses that can harm your physical body apart from your mental one.<b> <i>All these goes back to one major 
+          point which is the lack of self-esteem.</i></b> In boosting one's self-esteem, it is undoubtly a process that indolves developing a positive self-image and believing in your own abilities and worth regardless
+          of others. More emphasis should also be put into helping youths learn and understand about the importance of self-care and their individual journey of improving themsleves as a whole. improving
+          themselves can be a form of learning a new skill that they are interested in and only when one chooses to focus internally, then will one feel more confident about themselves. 
+        <br><br>
+          To conclude, I personally think social media has brought us a lot of convenience and good today, but we cannot ignore the bad that it has brought upon us as well. But at the same time, social media isn't inherently 
+          bad but it is the people who uses it for bad intentions that are bad. The usage and impact of social media is a topic that people should constantly be talked about to address its issues it can bring about. In brief, 
+          all of us who are avid social media users, ought to be responsible users and stand up for what is right. 
         </p>
-         
+        <br><br><br>
+        <p class="quote"><i><b>So, is Social Media good or bad for us today?</i></b></p>
 
         <br>
         <img class="pusheen1" src="./resources/pusheen.jpg">
-        <p class="center footer"><a href="#sushigif">Go back to the starting page</a></p>
-        
-         <br><br><br> 
+        <p class="center footer"><a href="#sushigif">Go back to the starting page</a></p><br><br><br> 
+   
       </div>
 
       <div class="pusheen-container">
@@ -939,10 +943,7 @@
       </div>
 
     <div class="bottomSection">
-
-
-        <div>
-          <br><br>
+        <div><br><br>
           <h2 class="underlinedheader footer">IMPORTANT LINKS</h2>
           <p class="textcentralisedleft container2">
             <a href="https://docs.google.com/document/d/1NwoO_QfkWRqTbTnKy2G186iMa7LTAcVJOZt0Pe4Hcnk/edit" target="_blank" rel="noopener noreferrer">Final Project Write Up</a> <br>
@@ -951,66 +952,31 @@
           </p>
         </div>
 
-        <div>
-          <br><br>
+        <div><br><br>
           <h2 class="underlinedheader footer">CONTACT</h2>
           <p class="textcentralisedleft container2">
             Email: michelle.tay@u.nus.edu <br>
           </p>
         </div>
 
-        <div>
-          <br><br>
+        <div><br><br>
+          
           <h2 class="underlinedheader footer">SOCIALS</h2>
           <p class="textcentralisedleft container2">
             <a href="https://www.linkedin.com/in/michelle-tay-ct/" target="_blank" rel="noopener noreferrer">Linkedin</a> <br>
           </p>
         </div>
-
-
-    </div>
-
-      <!-- <div class="row">
-        <div class="column">
-          <br><br>
-          <h2 class="underlinedheader underlined footer">Share This with a Friend!</h2>
-          <p class="textcentralisedleft container2">
-            ...
-          </p>
-        </div>
-        <div class="column" >
-          <br><br>
-          <h2 class="underlinedheader underlined footer">Share This with a Friend!</h2>
-          <p class="textcentralisedleft container2">
-            ...
-          </p>  
-        </div>
-      </div> -->
-
-
+      </div>
     </div>
         
 
-    
-      
 
-
-    
-   
-      
     </section>
 
- 
-
-    <!--StoryBoard-->
-
+<!--STORYBOARD-->
     <section id="storyBoard" style="display:none" >
-      <div id="banner">
-        <img src="./resources/storyboardwallpaper.jpg" alt="social media" width="100%" height="100%">    
-      </div>
-      <div id="statementborder"> 
-        <p id="bordertitle">Welcome to Michelle's StoryBoard</p>
-      </div>
+      <div id="banner"><img src="./resources/storyboardwallpaper.jpg" alt="social media" width="100%" height="100%"></div>
+      <div id="statementborder"><p id="bordertitle">Welcome to Michelle's StoryBoard</p></div>
 
       <div>
       <h1 class="center underlined">About</h1>
@@ -1037,14 +1003,10 @@
 
   <div class="marblebox">
     <h1 class="storyboardheader underlined">Data 📊</h1>
-   
     <p class="container2">In this research, the following data were looked into, cleaned, transformed and/or combined: </p>
-
     <ul class="container2">
-
       <!--USAGE-->
       <li><a href="https://www.statista.com/statistics/454772/number-social-media-user-worldwide-region/">Number of social network users worldwide in 2022, by region</a></li>
-      <!--<li><a href="https://gs.statcounter.com/social-media-stats#monthly-201801-202212">Social Media Stats Worldwide from 2018 - 2022</a></li>-->
       <li><a href="https://www.statista.com/statistics/1322876/social-media-apps-time-spent-global/">Average time spent (in minutes) using selected mobile social apps daily for users worldwide in 2nd quarter 2022</a></li>
       <li><a href="https://www.businessofapps.com/data/tik-tok-statistics/">TikTok Statistics</a></li>
       <li><a href="https://www.businessofapps.com/data/facebook-statistics/">Facebook Statistics</a></li>
@@ -1063,13 +1025,7 @@
       <li><a href="https://www.kaggle.com/datasets/apoorva1225/social-media-influence">Social Media Influence Survey 2018</a></li>
       <li><a href="https://www-statista-com.libproxy1.nus.edu.sg/statistics/207489/teenagers-personal-experiences-on-social-media-websites/?locale=en">Leading reasons why teenagers in the United States feel that social media has a mostly negative effect on people their own age as of April 2018</a></li>
       <li><a href="https://data.mendeley.com/datasets/sktz4xv4vh/2">Media Use Pattern with Respect to Mental Health in COVID-19: A Dataset from India</a></li>
-      <!--
-      <li><a href="https://data.world/maheepmahat/data-of-usage-of-social-media-by-students-between-age-17-22">Survey: Effects of social media</a></li>
-      <li><a href="https://www.cloudwards.net/cyberbullying-statistics/2">Cyberbullying Statistics</a></li>
-      -->
     </ul>
-
-    
   </div>
 
     <div class="marblebox">
@@ -1105,75 +1061,68 @@
 
     <div class="marblebox">
       <h1 class="storyboardheader underlined">Findings 🔎</h1>
-
-      <p class="container2">
-        <b>Usage</b> <br>
-        1. Social media users are mostly contributed by people within the Asia Pacific Region, and esepcially Southeast Asia.<br>
-        2. Tiktok has the highest average screen time, followed by YouTube and then Instagram 
-        3. Tiktok's growth is increasing exponentially, Instagram is growing steadily and Facebook is increasing at a decreasing rate.
-        4. Aged 18-24 mostly uses Tiktok, Aged 25-34 mostly uses Instagram and Facebook.
-        5. Facebook users (males>female), Tiktok Users (female>males>others), Instagram users (female>males)
-        6. Most users are on social media because they wish to keep in touch with friends and family and the least reason is to make new contacts. <br><br>
-
-        <b>Impact </b> <br>
-        <i> --- Cyberbullying --- </i> <br>
-        7. Most parents are aware that cyberbullying most occurs on social network and the least likely platform they perceive their kids to be cyberbullied on is through an email. <br>
-        8. Victims in china experienced cyberbullying most through mobile, whereas victims in India and Malaysia experiences cyberbullying mostly via social networks. <br>
-        9. Most victims of cyberbullying identifies as transgender (Based in US) <br>
-        10. Most middle and high school victims mostly experinece receiving mean or hurtful comments (Based in US) <br>
-        11. Two thirds of people aged 30 or under have experienced some form of online harassment (Based in US) <br><br>
-
-        <i> --- Mental Health & Emotional Influences --- </i> <br>
-        12. 35% of teenagers with low social-emotional well-being reported to have been cyber bullied (Based in US)<br>
-        13. 36% of global respondents belonging to Gen Z felt that social media usage had a negative impact on social wellbeing in 2021 <br>
-        14. Sleep is not much of a cause of sleep deprivation (to my surprise) <br>
-        15. Teenagers perceive bullying/rumour spreading to be the leading reason social media has a negative effect on them <br>
-        16. Well being and anxiety scores are negatively correlated.<br>
-        17. Most positive leading reason for social media is to be able to connect with friends and family, as perceived by teenagers (Based in US) <br>
-
-      </p>
-
-      <!-- <p class="container2">Social media usage and impact research has highlighted the potential benefits of social media, such as the ability to connect with others, access to diverse perspectives and information, and the opportunity to mobilize for social change. 
-        However, research has also identified potential negative impacts, such as the spread of misinformation, cyberbullying, and addiction to social media.
-      <br><br> 
-      *in progress</p> -->
-  </div>
+        <p class="container2">
+          <b>Usage</b> <br>
+          1. Social media users are mostly contributed by people within the Asia Pacific Region, and esepcially Southeast Asia.<br>
+          2. Tiktok has the highest average screen time, followed by YouTube and then Instagram 
+          3. Tiktok's growth is increasing exponentially, Instagram is growing steadily and Facebook is increasing at a decreasing rate.
+          4. Aged 18-24 mostly uses Tiktok, Aged 25-34 mostly uses Instagram and Facebook.
+          5. Facebook users (males>female), Tiktok Users (female>males>others), Instagram users (female>males)
+          6. Most users are on social media because they wish to keep in touch with friends and family and the least reason is to make new contacts. <br><br>
+          <b>Impact </b> <br>
+          <i> --- Cyberbullying --- </i> <br>
+          7. Most parents are aware that cyberbullying most occurs on social network and the least likely platform they perceive their kids to be cyberbullied on is through an email. <br>
+          8. Victims in china experienced cyberbullying most through mobile, whereas victims in India and Malaysia experiences cyberbullying mostly via social networks. <br>
+          9. Most victims of cyberbullying identifies as transgender (Based in US) <br>
+          10. Most middle and high school victims mostly experinece receiving mean or hurtful comments (Based in US) <br>
+          11. Two thirds of people aged 30 or under have experienced some form of online harassment (Based in US) <br><br>
+          <i> --- Mental Health & Emotional Influences --- </i> <br>
+          12. 35% of teenagers with low social-emotional well-being reported to have been cyber bullied (Based in US)<br>
+          13. 36% of global respondents belonging to Gen Z felt that social media usage had a negative impact on social wellbeing in 2021 <br>
+          14. Sleep is not much of a cause of sleep deprivation (to my surprise) <br>
+          15. Teenagers perceive bullying/rumour spreading to be the leading reason social media has a negative effect on them <br>
+          16. Well being and anxiety scores are negatively correlated.<br>
+          17. Most positive leading reason for social media is to be able to connect with friends and family, as perceived by teenagers (Based in US) <br>
+          </p>
+      </div>
 
     <div class="marblebox">
         <h1 class="storyboardheader underlined">Recommendation 🙌</h1>
         <p class="container2">
           <b>Final Thoughts</b><br>
-
-
           1. Social media usage should be regulated <br>
           2. Parents play a crucial role in young children's lives and should always make sure that they are well-informed about what they are up to while not crossing any boundaries.<br>
           3. Victims of cyberbullying and those who are negatively affected should be educated about how to get help. The help should also be more accessible to victims.<br> <br>
           4. While people of younger generations are more digially literate, youths still need to be educated on how to be safe online and be aware about the danger social media can pose to them 
-          if they are not responsible with their data that they put up online enough.
+          if they are not responsible with their data that they put up online enough. <br><br>
           5. Know when to take a break from social media
-
         </p>
-
     </div>
-
-
     </section>
 
-    <!--NAV BAR-->
 
+<!--NAV BAR-->
     <div class="navbar">
       <button class="storyboardButton" onclick="hidelandingpage2()"><span>View StoryBoard</span></button>
       <button class="homeButton" onclick="hidelandingmainpage()"><span>Datastory</span></button>
       <button class="weeklyprogressDiaryBut" onclick = "window.open('https://nm2207.org/2223S2/e1073625/web/projdiary/projdiary.html','_blank')"><span>Weekly Progress Diary</span></button>
       <button class="writeupBut" onclick = "window.open('https://docs.google.com/document/d/1NwoO_QfkWRqTbTnKy2G186iMa7LTAcVJOZt0Pe4Hcnk/edit?usp=sharing','_blank')"><span>Final Write Up Document</span></button>
+      <img class="pusheen5" src="./resources/pusheenpng2.png">
+      <img class="pusheen6" src="./resources/pusheen6.png">
+      <img class="pusheen7" src="./resources/pusheen7.png">
+      <img class="pusheen8" src="./resources/pusheen8.png">
+      <img class="pusheen9" src="./resources/pusheen9.png">
+      <img class="pusheen10" src="./resources/pusheen10.png">
+      <img class="pusheen11" src="./resources/pusheen11.png">
+      <img class="pusheen12" src="./resources/pusheen12.png">
+      <img class="pusheen13" src="./resources/pusheen13.png">
       <h1 class="text2"> NM2207 Final Project</h1>
+     
+      
       
     </div>
     
-    
-
-    
-
-</body>
+  
+  </body>
 
 </html>
