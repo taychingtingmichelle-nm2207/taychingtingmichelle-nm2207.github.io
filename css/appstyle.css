@@ -76,9 +76,9 @@ body {
 .text2{
   font-size: 24px;
   color: #ffffff;
-  text-align:center;
-  align-items: center;
-  margin-top: 20px
+  float:right;
+  margin-top: 20px;
+  margin-right: 25px;
 }
 
 .marblebox{
@@ -633,6 +633,7 @@ section .img-1, section .img-2, section .img-3, section .img-4 section .img-5, s
   box-shadow: 0 9px #361601;
   border: 1px;
 }
+
 
 
 #musicButton:hover {
