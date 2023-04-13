@@ -179,7 +179,7 @@ td, th {
   text-decoration: underline;
   padding: 10px 20px 10px 20px;
   margin-top: 14px;
-  margin-left: 180px;
+  margin-left: 179.2px;
   position: fixed;
   display: inline-block;
   font-size: 16px;
@@ -195,7 +195,7 @@ td, th {
   text-decoration: underline;
   padding: 10px 20px 10px 20px;
   margin-top: 14px;
-  margin-left: 290px;
+  margin-left: 292px;
   position: fixed;
   display: inline-block;
   font-size: 16px;
@@ -211,7 +211,7 @@ td, th {
   text-decoration: underline;
   padding: 10px 20px 10px 20px;
   margin-top: 14px;
-  margin-left: 495px;
+  margin-left: 498px;
   position: fixed;
   display: inline-block;
   font-size: 16px;
@@ -322,8 +322,8 @@ td, th {
 
 .navbar {
   overflow: hidden;
-  /*background-color: #362009;*/
-  background-image: url('../resources/blackflowers.jpg');
+  background-color: rgba(0, 0, 0, 0.404);
+ /* background-image: url('../resources/blackflowers.jpg');*/
   position: fixed;
   top: 0;
   width: 100%;
@@ -597,7 +597,7 @@ section .img-1, section .img-2, section .img-3, section .img-4 section .img-5, s
   text-decoration: underline;
   padding: 10px 20px 10px 20px;
   margin-top: 14px;
-  margin-left: 20px;
+  margin-left: 16px;
   position: fixed;
   display: inline-block;
   font-size:16px;
@@ -633,6 +633,7 @@ section .img-1, section .img-2, section .img-3, section .img-4 section .img-5, s
   box-shadow: 0 9px #361601;
   border: 1px;
 }
+
 
 #musicButton:hover {
   background-image: url('../resources/milkyway.jpg');
